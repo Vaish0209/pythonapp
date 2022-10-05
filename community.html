@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--======== CSS ======== -->
+  <link rel="stylesheet" href="static/css/community.css">
+
+  <!--=== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <!--<title>Dashboard Sidebar Menu</title>-->
+</head>
+
+<body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <!--<img src="logo.png" alt="">-->
+        </span>
+
+        <div class="text logo-text">
+          <span class="name">M E D P A L</span>
+        </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle' id="chev"></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+        <!--<li class="search-box">
+          <i class='bx bx-search icon'></i>
+          <input type="text" placeholder="Search...">
+        </li>-->
+
+        <ul class="menu-links">
+
+          <li class="nav-link">
+            <a href="index.html">
+              <i class="fa fa-home" style="font-size:30px"></i>
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+
+
+          <li class="nav-link">
+            <a href="share.html">
+              <i class="fa fa-edit" style="font-size:30px"></i>
+              <span class="text nav-text">Share your Story</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="read.html">
+              <i class="fa fa-book" style="font-size:30px;"></i>
+              <span class="text nav-text">Read stories</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="ask.html">
+              <i class='fa fa-comments-o' style="font-size:30px;"></i>
+              <span class="text nav-text">FAQs</span>
+            </a>
+          </li>
+
+        <!--  <div class="bottom-content">
+            <li class="">
+              <a href="#">
+                <i class='bx bx-log-out icon' style="font-size:27px;"></i>
+                <span class="text nav-text">Logout</span>
+              </a>
+            </li>
+          </div>-->
+      </div>
+
+  </nav>
+  <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+  <section class="home">
+    <div class="text">
+      <img src="static/images/comm.jpg" class="imz" alt="img">
+      <br> <br>
+      <h3>Our Community</h3>
+      <p>This our community where people can post their successful journeys through their illness and motivate others to fight their illness & stay strong.
+      Also, any queries regarding health can be asked here.</p>
+      <br>
+    </div>
+    <br>
+
+
+    <section class="testimonial text-center">
+        <div class="container_test">
+
+            <div class="heading white-heading">
+                Testimonial
+            </div>
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 1</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 2</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 3</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+  <!--<section id="testimonials">
+    <br>
+
+    <div class="container">
+      <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-lg-6 float-left">
+              <img class="testimonial-image" src="static/images/aab.gif">
+              <div class="carousel-content">
+                <p>Yoga Teacher 1</p>
+              </div>
+            </div>
+            <div class="">
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-4 float-left">
+              <h1>Online General physician</h1><img class="testimonial-image" src="static/images/aab.gif">
+              <div class="carousel-content">
+                <p>cisufjnk</p>
+                <h2>hksjnckjs</h2>
+                <h2>hdskuncj</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-4 float-left">
+              <h1>Online Paediatrician</h1><img class="testimonial-image" src="static/images/aab.gif">
+              <div class="carousel-content">
+                <p>cisufjnk</p>
+                <h2>hksjnckjs</h2>
+                <h2>hdskuncj</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-4 float-left">
+              <h1>Online Gynacologist</h1><img class="testimonial-image" src="static/images/aab.gif">
+              <div class="carousel-content">
+                <p>cisufjnk</p>
+                <h2>hksjnckjs</h2>
+                <h2>hdskuncj</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-4 float-left">
+              <h1>
+                <center>Online Dermaologist
+              </h1><img class="testimonial-image" src="static/images/aab.gif">
+              <div class="carousel-content">
+                <p>cisufjnk</p>
+                <h2>hksjnckjs</h2>
+                <h2>hdskuncj</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-4 float-left"><img class="testimonial-image" src="static/images/aab.gif">
+              <div class="carousel-content">
+                <p>cisufjnk</p>
+                <h2>hksjnckjs</h2>
+                <h2>hdskuncj</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-4 float-left"><img class="testimonial-image" src="static/images/aab.gif">
+              <div class="carousel-content">
+                <p>cisufjnk</p>
+                <h2>hksjnckjs</h2>
+                <h2>hdskuncj</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>-->
+    </section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <script>
+    const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    })
+
+    searchBtn.addEventListener("click", () => {
+      sidebar.classList.remove("close");
+    })
+
+    modeSwitch.addEventListener("click", () => {
+      body.classList.toggle("dark");
+
+      if (body.classList.contains("dark")) {
+        modeText.innerText = "Light mode";
+      } else {
+        modeText.innerText = "Dark mode";
+
+      }
+    });
+  </script>
+
+</body>
+
+</html>

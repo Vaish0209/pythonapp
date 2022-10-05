@@ -1,0 +1,380 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link rel="stylesheet" href=" C:/Users/Vaishnavi Seshadri/Desktop/pythonapp/static/css/diag.css">
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+<!-- .navbar -->
+<nav class="navbar navbar-full navbar navbar-expand-lg">
+  <a href="#" class="navbar-brand">M E D P A L</a>
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">
+    &#9776;
+  </button>
+  <div class="collapse navbar-toggleable-md" id="mainNavbarCollapse">
+    <ul class="nav navbar-nav pull-lg-right">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link" id="navbarDropdown1" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diagnosis</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+
+          <li><a class="dropdown-item" href="diagheart.html">Heart</a></li>
+          <li><a class="dropdown-item" href="diagdiab.html">Diabetes</a></li>
+          <li><a class="dropdown-item" href="diagkidney.html">Kidney Disease</a></li>
+          <li><a class="dropdown-item" href="diagbreast.html">Breast Cancer</a></li>
+          <li><a class="dropdown-item" href="diaglung.html">Lung Cancer</a></li>
+          <li><a class="dropdown-item" href="diagthy.html">Thyroid</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link" id="navbarDropdown1" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diet</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+
+          <li><a class="dropdown-item" href="dietheart.html">Heart</a></li>
+          <li><a class="dropdown-item" href="dietdiab.html">Diabetes</a></li>
+          <li><a class="dropdown-item" href="dietbreast.html">Cancer</a></li>
+          <li><a class="dropdown-item" href="dietkidney.html">Kidney Disease</a></li>
+          <li><a class="dropdown-item" href="dietpn.html">Pneumonia</a></li>
+          <li><a class="dropdown-item" href="dietal.html">Alzheimer’s</a></li>
+
+          <li><a class="dropdown-item" href="dietthy.html">Thyroid</a></li>
+
+          <li><a class="dropdown-item" href="diethep.html">Hepatitis C</a></li>
+          <li><a class="dropdown-item" href="dietliv.html">Liver Disease</a></li>
+          <li><a class="dropdown-item" href="dietchol.html">Cholesterol</a></li>
+          <li><a class="dropdown-item" href="dietbp.html">Blood Pressure</a></li>
+
+        </ul>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link" id="navbarDropdown1" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exercise</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+          <li><a class="dropdown-item" href="exercisehead.html">Migraine</a></li>
+          <li><a class="dropdown-item" href="exerciseuter.html">Uterus</a></li>
+          <li><a class="dropdown-item" href="exerciseheart.html">Heart</a></li>
+          <li><a class="dropdown-item" href="exerciseheart.html">Diabetes</a></li>
+          <li><a class="dropdown-item" href="exercisekidney.html">Kidney Disease</a></li>
+          <li><a class="dropdown-item" href="exercisebreast.html">Breast Cancer</a></li>
+          <li><a class="dropdown-item" href="exerciselung.html">Lung Cancer</a></li>
+          <li><a class="dropdown-item" href="exercisebrain.html">Brain Tumor</a></li>
+          <li><a class="dropdown-item" href="exercisepm.html">Pneumonia</a></li>
+          <li><a class="dropdown-item" href="exerciseal.html">Alzheimer’s</a></li>
+          <li><a class="dropdown-item" href="exercisepar.html">Parkinson's</a></li>
+          <li><a class="dropdown-item" href="exercisethy.html">Thyroid</a></li>
+          <li><a class="dropdown-item" href="exercisehep.html">Hepatitis C</a></li>
+          <li><a class="dropdown-item" href="exerciseliv.html">Liver Disease</a></li>
+          <li><a class="dropdown-item" href="exercisechol.html">Cholesterol</a></li>
+          <li><a class="dropdown-item" href="exercisebp.html">Blood Pressure</a></li>
+        </ul>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="connect.html">Connect</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--_*********************************************************************************************************************************-->
+
+<!--_*********************************************************************************************************************************-->
+
+
+
+<!--_*********************************************************************************************************************************-->
+
+<!--<script type="text/javascript" src="static/js/dg.js"></script>
+</head>
+<script language="Javascript">
+function validate(){
+var allok = true;
+  if(kidney_Disease_Prediction.Age__1.value == ""){
+    alert('Invalid input for Age, this must be a number')
+    return false;
+  }
+  if(kidney_Disease_Prediction.bp.value == ""){
+    alert('Invalid input for Blood Pressure In mmHg, this must be a number')
+    return false;
+  }
+  if(kidney_Disease_Prediction.sg.value == ""){
+    alert('Invalid input for Specific Gravity In mg/dl, this must be a number')
+    return false;
+  }
+  if(kidney_Disease_Prediction.alb.value == ""){
+    alert('Invalid input for Albumin, this must be a number')
+    return false;
+  }
+  if(kidney_Disease_Prediction.bgr.selectedIndex == 0 ){
+    alert('Invalid input for Blood Glucose Random');
+    return false;
+  }
+  if(kidney_Disease_Prediction.bu.value == ""){
+    alert('Invalid input for Blood Urea');
+    return false;
+  }
+
+  if(kidney_Disease_Prediction.sc.value == ""){
+    alert('Invalid input for Serum Creatinine, this must be a number')
+    return false;
+  }
+  if(kidney_Disease_Prediction.s.value == ""){
+    alert('Invalid input for Sodium, this must be a number')
+    return false;
+  }
+  if(kidney_Disease_Prediction.p.value == ""){
+    alert('Invalid input for Potassium, this must be a number')
+    return false;
+  }
+  if(kidney_Disease_Prediction.hm.value == ""){
+    alert('Invalid input for Haemoglobin, this must be a number')
+    return false;
+  }
+  if(kidney_Disease_Prediction.pcv.value == ""){
+    alert('Invalid input for Packed Cell Volume, this must be a number')
+    return false;
+  }
+  if(kidney_Disease_Prediction.wbcc.value == ""){
+    alert('Invalid input for White Blood Cell Count, this must be a number')
+    return false;
+  }
+  if(kidney_Disease_Prediction.rbcc.value == ""){
+    alert('Invalid input for Red Blood Cell Count, this must be a number')
+    return false;
+  }
+document.kidney_Disease_Prediction.predictkid.disabled="disabled";
+return true;
+}
+</script>-->
+
+<!--_*********************************************************************************************************************************-->
+
+<body>
+
+  <center>
+    <h1>Kidney Diagnosis</h1>
+  </center>
+  <br>
+  <div style="
+    width: 500px;
+    height: 50rem;
+    margin: 0px auto;
+    padding: 10px 20px;
+  ">
+    <section class="info">
+      <form name="kidney_Disease_Prediction" method="post" action="{{url_for('predictkid')}}">
+        <div>
+          <ul class="bullet">
+            <li><label class="gfield_label">Enter your Age</label>
+              <div><input name="Age__1" id="Age__1" type="text" class="medium" required minlength="1" maxlength="50" placeholder="Example: 40" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Blood Pressure (In mmHg)</label>
+              <div><input name="bpp" id="bpp" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Specific Gravity (sg)</label>
+              <div><input name="sgg1" id="sgg1" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Sugar</label>
+              <div><input name="sgr" id="sgr" type="text" class="medium" required minlength="1" maxlength="50" placeholder="[Range: 0-5]">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Albumin</label>
+              <div><input name="alb" id="alb" type="text" class="medium" required minlength="1" maxlength="50" placeholder="[Range: 0-5]">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Red Blood Cells</label>
+              <div include="form-input-select()">
+                <select name="rbcc" required>
+                  <option value="">Please Select</option>
+                  <option value="0">Normal</option>
+                  <option value="1">Abnormal</option>
+                </select>
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Pus cell</label>
+              <div include="form-input-select()">
+                <select name="ps" required>
+                  <option value="">Please Select</option>
+                  <option value="0">Normal</option>
+                  <option value="1">Abnormal</option>
+                </select>
+              </div>
+            </li>
+
+            <li><label class="gfield_label">Pus cell clumps</label>
+              <div include="form-input-select()">
+                <select name="psc" required>
+                  <option value="">Please Select</option>
+                  <option value="1">Present</option>
+                  <option value="0">NotPresent</option>
+                </select>
+              </div>
+            </li>
+
+            <li><label class="gfield_label">Bacteria</label>
+              <div include="form-input-select()">
+                <select name="bt" required>
+                  <option value="">Please Select</option>
+                  <option value="1">Present</option>
+                  <option value="0">NotPresent</option>
+                </select>
+              </div>
+            </li>
+
+            <li><label class="gfield_label">Blood Glucose Random(mgs/dl)</label>
+              <div><input name="bgr" id="bgr" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Blood Urea(mgs/dl)</label>
+              <div><input name="bu" id="bu" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Serum Creatinine(mgs/dl)</label>
+              <div><input name="sccc" id="sccc" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Sodium</label>
+              <div><input name="so" id="so" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Potassium</label>
+              <div><input name="po" id="po" type="text" class="medium" required minlength="1" maxlength="50"autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Haemoglobin</label>
+              <div><input name="hm" id="hm" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Packed Cell Volume</label>
+              <div><input name="pcv" id="pcv" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">White Blood Cell count</label>
+              <div><input name="wbcc" id="wbcc" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Red Blood Cell count</label>
+              <div><input name="rbcccc" id="rbcccc" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Hypertension</label>
+              <div include="form-input-select()">
+                <select name="hyp" required>
+                  <option value="">Please Select</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </li>
+
+            <li><label class="gfield_label">Diabetes Mellitus</label>
+              <div include="form-input-select()">
+                <select name="dmt" required>
+                  <option value="">Please Select</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </li>
+
+            <li><label class="gfield_label">Coronary Artery Disease</label>
+              <div include="form-input-select()">
+                <select name="cat" required>
+                  <option value="">Please Select</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </li>
+
+            <li><label class="gfield_label">Apetite</label>
+              <div include="form-input-select()">
+                <select name="apt" required>
+                  <option value="">Please Select</option>
+                  <option value="1">Good</option>
+                  <option value="0">Poor</option>
+                </select>
+              </div>
+            </li>
+
+            <li><label class="gfield_label">Pedal Edema</label>
+              <div include="form-input-select()">
+                <select name="pedz" required>
+                  <option value="">Please Select</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </li>
+
+            <li><label class="gfield_label">Anemia</label>
+              <div include="form-input-select()">
+                <select name="anm" required>
+                  <option value="">Please Select</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </li>
+            <br><br>
+          </ul>
+        </div>
+        <div class="sub" align="center">
+          <input type="submit" value="Predict">
+        </div>
+      </form>
+    </section>
+  </div>
+
+
+
+
+  <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+</body>
+
+
+<!--_*********************************************************************************************************************************-->

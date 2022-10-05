@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <style>
+
+h4{
+  font-size: 2vw;
+}
+
+    .front-page {
+      background-image: url(" C:/Users/Vaishnavi Seshadri/Desktop/pythonapp/static/images/background.png");
+      height: 900px;
+      /* You must set a specified height */
+      background-position: center;
+      /* Center the image */
+      background-repeat: no-repeat;
+      /* Do not repeat the image */
+      background-size: cover;
+      /* Resize the background image to cover the entire container */
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      color: white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-toggler {
+      border-color: white;
+    }
+
+    .navbar .navbar-brand {
+      color: #FEF5ED;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 25px;
+      margin-left: 10px;
+    }
+
+    .navbar .navbar-nav {
+
+      font-family: "Times New Roman", Times, serif;
+      font-size: 24px;
+    }
+
+    .navbar .nav-item a {
+      color: #C8C6C6 !important;
+
+    }
+
+    .navbar .nav-item a:hover {
+      color: #EFA765 !important;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: white;
+      border: 1px solid #EFA765;
+      border-radius: 0px;
+      font-size: 23px;
+    }
+
+
+
+    .dropdown-item:hover {
+      color: #EFA765;
+      cursor: arrow;
+      background: none;
+    }
+
+    @media (max-width: 62em) {
+      .navbar-nav {
+        padding-top: .425rem;
+        padding-left: 0.75rem;
+      }
+
+      .navbar-nav .nav-item {
+        float: none;
+      }
+
+      .navbar-brand {
+        float: right;
+      }
+
+      .navbar-brand,
+      .navbar-nav .nav-item {
+        display: block;
+      }
+
+      .navbar-nav .nav-item+.nav-item {
+        margin-left: 0;
+      }
+
+      .dropdown-menu {
+        position: relative;
+        float: none;
+      }
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+      background: linear-gradient(to right, black, black, black, #4F0E0E);
+      overflow-x: hidden;
+      font-size: 24px;
+      /* Hide horizontal scrollbar */
+    }
+
+    p{
+      font-size: 1.3vw;
+    }
+
+    .heartgif{
+      size: 5vw;
+    }
+
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 40px 40px 20px 40px;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+
+      .content-wrapper .content p {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 16px;
+      }
+
+    }
+
+    @media screen and (min-width: 600px) {
+      .content-wrapper .content p {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 24px;
+      }
+
+
+    }
+
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- .navbar -->
+  <!-- .navbar -->
+  <nav class="navbar navbar-full navbar navbar-expand-lg">
+    <a href="#" class="navbar-brand">M E D P A L</a>
+    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">
+      &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-md" id="mainNavbarCollapse">
+      <ul class="nav navbar-nav pull-lg-right">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#abt">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" id="navbarDropdown1" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diagnosis</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+
+            <li><a class="dropdown-item" href="diagheart.html">Heart</a></li>
+            <li><a class="dropdown-item" href="diagdiab.html">Diabetes</a></li>
+            <li><a class="dropdown-item" href="diagkidney.html">Kidney Disease</a></li>
+            <li><a class="dropdown-item" href="diagbreast.html">Breast Cancer</a></li>
+            <li><a class="dropdown-item" href="diaglung.html">Lung Cancer</a></li>
+            <li><a class="dropdown-item" href="diagthy.html">Thyroid</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" id="navbarDropdown1" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diet</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+
+            <li><a class="dropdown-item" href="dietheart.html">Heart</a></li>
+            <li><a class="dropdown-item" href="dietdiab.html">Diabetes</a></li>
+            <li><a class="dropdown-item" href="dietbreast.html">Cancer</a></li>
+            <li><a class="dropdown-item" href="dietkidney.html">Kidney Disease</a></li>
+            <li><a class="dropdown-item" href="dietpn.html">Pneumonia</a></li>
+            <li><a class="dropdown-item" href="dietal.html">Alzheimer’s</a></li>
+
+            <li><a class="dropdown-item" href="dietthy.html">Thyroid</a></li>
+
+            <li><a class="dropdown-item" href="diethep.html">Hepatitis C</a></li>
+            <li><a class="dropdown-item" href="dietliv.html">Liver Disease</a></li>
+            <li><a class="dropdown-item" href="dietchol.html">Cholesterol</a></li>
+            <li><a class="dropdown-item" href="dietbp.html">Blood Pressure</a></li>
+
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" id="navbarDropdown1" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exercise</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <li><a class="dropdown-item" href="exercisehead.html">Migraine</a></li>
+            <li><a class="dropdown-item" href="exerciseuter.html">Uterus</a></li>
+            <li><a class="dropdown-item" href="exerciseheart.html">Heart</a></li>
+            <li><a class="dropdown-item" href="exerciseheart.html">Diabetes</a></li>
+            <li><a class="dropdown-item" href="exercisekidney.html">Kidney Disease</a></li>
+            <li><a class="dropdown-item" href="exercisebreast.html">Breast Cancer</a></li>
+            <li><a class="dropdown-item" href="exerciselung.html">Lung Cancer</a></li>
+            <li><a class="dropdown-item" href="exercisebrain.html">Brain Tumor</a></li>
+            <li><a class="dropdown-item" href="exercisepm.html">Pneumonia</a></li>
+            <li><a class="dropdown-item" href="exerciseal.html">Alzheimer’s</a></li>
+            <li><a class="dropdown-item" href="exercisepar.html">Parkinson's</a></li>
+            <li><a class="dropdown-item" href="exercisethy.html">Thyroid</a></li>
+            <li><a class="dropdown-item" href="exercisehep.html">Hepatitis C</a></li>
+            <li><a class="dropdown-item" href="exerciseliv.html">Liver Disease</a></li>
+            <li><a class="dropdown-item" href="exercisechol.html">Cholesterol</a></li>
+            <li><a class="dropdown-item" href="exercisebp.html">Blood Pressure</a></li>
+          </ul>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="connect.html">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+  <section class="front-page">
+    <div class="overlay">
+      <center>
+        <h1 style="color: white; font-size:8vw;">M E D P A L</h1>
+        <hr style="height:2px;border:none;color:#fff;background-color:#fff;" />
+        <p style="font-size:30px;">One step towards health!!</p>
+      </center>
+
+    </div>
+
+  </section>
+
+</body>
+<!--- 2nd -******************************__________________________________________________________________________*************** part -->
+
+
+
+
+<section id="abt" style="background:white;">
+  <br><br>
+  <h3 style="text-align:center; font-size:3.3vw;">“ Health is Wealth ” </h3>
+  <div class="row">
+    <div class="column" style="background-color:">
+
+      <img src="C:/Users/Vaishnavi Seshadri/Desktop/pythonapp/static/images/prevention_pic.jpg" class="responsive" alt="" />
+    </div>
+    <br>
+    <div class="column" style="padding: 10px 40px 40px 40px;font-family:" Times New Roman", Times, serif;">
+      <p>A lot of people are suffering without right guidance from the doctors as many can't afford the
+        fee or don't have the accessibility to good hospitals and doctors ,and also few find it tiring to wait in the long queue.
+        Thus, many die due to lack of timely medical check-up.</p>
+      <p>So, to tackle all these issues, we have designed this website to help people.
+        Our website is a bi-product of introducing technology in the medical field. It is a mere application of AI.</p>
+      <p>We aim at :</p>
+      <p>1.Helping people track their health so that it reduces untimely death and leads to healthy lifestyle.</p>
+      <p>2.Educating people regarding the significance of proper diet and also exercises.</p>
+      <p>3.Reduces fee expenses.</p>
+    </div>
+  </div>
+</section>
+<br><br>
+
+<!--------------------------------------------------------------------------------------------------------------------->
+<!--- *3rd part******************************************************************************************************************** -->
+<div class="service" style="background:linear-gradient(to right, black,black,black,#4F0E0E);">
+  <br><br>
+  <div class="container1 py-md-5">
+    <h3 style="color: #FEF5ED;"> Our Services :</h3>
+
+
+    <div class="row">
+      <div class="column"> </div>
+      <div class="column">
+        <img class="heartgif" src="C:\Users\Vaishnavi Seshadri\Desktop\pythonapp\static\images\HeartBeating.gif" alt="heart">
+        <h4 style="white-space:pre-wrap;color: #FEF5ED;">Track Your Health !</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column" style="background:none;">
+        <img class="responsive" src=" C:/Users/Vaishnavi Seshadri/Desktop/pythonapp/static/images/diet_img.jpg" alt="diet">
+        <h4 style="white-space:pre-wrap;color: #FEF5ED;">Know what your body needs</h4>
+      </div>
+      <div class="column"></div>
+    </div>
+
+
+    <div class="row">
+      <div class="column">
+      </div>
+      <div class="column" style="background:none;">
+        <img class="responsive" src=" C:/Users/Vaishnavi Seshadri/Desktop/pythonapp/static/images/exercise1.jpg" alt="exercise">
+        <h4 style="white-space:pre-wrap;color: #FEF5ED;">Go for it!!</h4>
+      </div>
+    </div>
+
+  </div>
+</div>
+<br><br><br> <br>
+<!-- ********************************************************************************************************************-->
+
+<footer style="background: white;">
+  <br><br>
+  <center>
+    <h3 style="font-size: 35px;text-align:center;white-space:pre-wrap;font-family:  " Times New Roman", Times, serif;">M E D P A L</h3>
+    <p style="font-size: 28px;font-family:" Times New Roman", Times, serif;">Made with love by Vaishnavi & Vyjayanthi <br><br> © Copyright 2022 <br><br>✉vaishnaviseshadri02@gmail.com <br><br>✉vyjayanthiseshadri02@gmail.com <br> <br> </p>
+
+  </center>
+</footer>
+
+
+
+</div>
+
+
+</body>
+
+</html>
